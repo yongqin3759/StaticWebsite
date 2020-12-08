@@ -1,0 +1,85 @@
+.calc-container{
+
+    margin-top: 30px;
+    padding: 10px 5px;
+    align-self: center;
+    width: 190px;
+    background-color: grey;
+    height: 230px;
+    border-radius: 15px;
+    margin: auto;
+}
+
+.screen{
+    text-align: right;
+    padding: 4px;
+    font-size: 20px;
+    background-color: black;
+    margin: 10px 5px 10px 5px;
+    border-radius: 7px;
+    color: #fff;
+}
+
+.calc-buttons{
+    display: flex;
+    flex-direction: row;
+    margin: auto;
+}
+
+.operators ul{
+    list-style: none;
+    flex-wrap: wrap;
+}
+
+.non-operators ul, .operators ul{
+    line-height: 1.5;
+    margin: 0;
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.non-operators ul{
+    width: 140px;
+}
+
+.non-operators ul li{
+    line-height: 1.5;
+    margin: 3px;
+    width: 39px;
+    height: 24px;
+    font-size: 16px;
+    text-align: center;
+    background: lightgray;
+    border-radius: 7px;
+    float: left;
+}
+
+@media(max-width:500px){
+    .non-operators ul li{
+        margin: 3px;
+        width: 39px;
+        text-align: center;
+        background: lightgray;
+        border-radius: 7px;
+    }
+    .operators ul li{
+        text-align: center;
+        width: 39px;
+        background-color: #e4000f;
+        margin: 3px;
+        border-radius: 7px;
+    }
+
+}
+
+.operators ul li{
+    text-align: center;
+    font-weight: bold;
+    font-size: 16px;
+    width: 39px;
+    background-color: #e4000f;
+    margin: 3px;
+    border-radius: 7px;
+    float: left;
+}

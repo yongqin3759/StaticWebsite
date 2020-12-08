@@ -3,22 +3,48 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Welcome to Yong Qin</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/css/materialize.min.css">
+    <title>Yong Qin | Derps</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
-    <link rel="stylesheet" href="./styles.css">
+    <link rel="stylesheet" href="styles.css">
+
+    <link rel="stylesheet" href="./calculator.css">
 </head>
 <body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-darkblue">
+        <div class="container nav max-width">
+        <a class="navbar-brand" href="#">Yong Qin</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+          <ul class="navbar-nav">
+            <li class="nav-item active">
+              <a class="nav-link" href="#">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">About me</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Booking</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link disabled" href="#">Disabled</a>
+            </li>
+          </ul>
+        </div>
+        </div>
+      </nav>
+
     <h1>Hi Everyone</h1>
     <h2>This is Yong Qin</h2>
-    <h3>Thanks for reading</h3>
-    <h2>Hi Tiff this is YQ and Sreekar wants to know when to eat Chicken rice? We made a fucking website to ask you this question</h2>
+    <h3>Thanks for reading, this is a free calculator app</h3>
+
 
     <!-- Calculator -->
-    <div class="container">
+    <div class="calc-container">
         <div class="screen row-2">0</div>
 
-        <div class="buttons row-5">
+        <div class="calc-buttons row-5">
             <div class="operators col-sm-3">
                 <ul class="operation-btn">
                     <li class="times">x</li>
@@ -54,7 +80,6 @@
     </div>
 </body>
 <script src="https://code.jquery.com/jquery-3.2.1.js" integrity="sha256-DZAnKJ/6XZ9si04Hgrsxu/8s717jcIzLy3oi35EouyE=" crossorigin="anonymous"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.min.js"></script>
 <script src="app.js"></script>
 <script src="calculator.js"></script>
 </html>

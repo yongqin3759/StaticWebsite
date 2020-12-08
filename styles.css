@@ -1,6 +1,68 @@
+/* Color Variable Declaration */
+:root{
+    --offwhite: #f7f9fb;
+    --lightblue: #8fc1e3;
+    --midblue: #5085a5;
+    --teal: #31708e;
+    --green: #687864;
+}
+
+/* Style reset */
+
 * {
     margin: 0;
     padding: 0;
+}
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, font, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	outline: 0;
+	font-size: 100%;
+	vertical-align: baseline;
+	background: transparent;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+
+/* remember to define focus styles! */
+:focus {
+	outline: 0;
+}
+
+/* remember to highlight inserts somehow! */
+ins {
+	text-decoration: none;
+}
+del {
+	text-decoration: line-through;
+}
+
+/* tables still need 'cellspacing="0"' in the markup */
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
 }
 
 .col, .col-1, .col-10, .col-11, .col-12, .col-2, .col-3, .col-4, .col-5, .col-6, .col-7, .col-8, .col-9, .col-auto, .col-lg, .col-lg-1, .col-lg-10, .col-lg-11, .col-lg-12, .col-lg-2, .col-lg-3, .col-lg-4, .col-lg-5, .col-lg-6, .col-lg-7, .col-lg-8, .col-lg-9, .col-lg-auto, .col-md, .col-md-1, .col-md-10, .col-md-11, .col-md-12, .col-md-2, .col-md-3, .col-md-4, .col-md-5, .col-md-6, .col-md-7, .col-md-8, .col-md-9, .col-md-auto, .col-sm, .col-sm-1, .col-sm-10, .col-sm-11, .col-sm-12, .col-sm-2, .col-sm-3, .col-sm-4, .col-sm-5, .col-sm-6, .col-sm-7, .col-sm-8, .col-sm-9, .col-sm-auto, .col-xl, .col-xl-1, .col-xl-10, .col-xl-11, .col-xl-12, .col-xl-2, .col-xl-3, .col-xl-4, .col-xl-5, .col-xl-6, .col-xl-7, .col-xl-8, .col-xl-9, .col-xl-auto {
@@ -8,83 +70,24 @@
     margin: 0;
 }
 
-
-
-.container{
-    margin-top: 30px;
-    padding-top: 20px;
-    align-self: center;
-    width: 210px;
-    background-color: grey;
-    height: 230px;
-    border-radius: 15px;
+/* Page Background */
+.max-width{
+    max-width: 1200px;
+    margin: auto;
+}
+body{
+    background: var(--offwhite);
 }
 
-.screen{
-    text-align: right;
-    padding: 0px 10px;
-    font-size: 20px;
-    background-color: black;
-    margin-bottom: 10px;
-    border-radius: 7px;
-    color: #fff;
+.bg-darkblue{
+    background: var(--teal);
 }
 
-.buttons{
-    display: flex;
+.bg-lightblue{
+    background: var(--lightblue);
 }
 
-.operators ul{
-    list-style: none;
-    flex-wrap: wrap;
-}
-
-.non-operators ul, .operators ul{
-    margin: 0;
-    list-style: none;
-    display: flex;
-    flex-wrap: wrap;
-}
-
-.non-operators ul{
-    width: 140px;
-}
-
-.non-operators ul li{
-    margin: 3px;
-    width: 39px;
-    font-size: 16px;
-    text-align: center;
-    background: lightgray;
-    border-radius: 7px;
-    float: left;
-}
-
-@media(max-width:500px){
-    .non-operators ul li{
-        margin: 3px;
-        width: 39px;
-        text-align: center;
-        background: lightgray;
-        border-radius: 7px;
-    }
-    .operators ul li{
-        text-align: center;
-        width: 39px;
-        background-color: #e4000f;
-        margin: 3px;
-        border-radius: 7px;
-    }
-
-}
-
-.operators ul li{
-    text-align: center;
-    font-weight: bold;
-    font-size: 16px;
-    width: 39px;
-    background-color: #e4000f;
-    margin: 3px;
-    border-radius: 7px;
-    float: left;
+/* navbar */
+.nav.container{
+    padding: 0 20px;
 }
